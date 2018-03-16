@@ -10,13 +10,16 @@ Rating module for titanium platform, the module work both Android and iOS
  
  # 2- 
  
- ```
- $.index.addEventListener("open", function(e) {
- 
-  	 var  rater = require('TiRater');
-     rater.initMe(Titanium.App.name,Titanium.App.id);
- 
-}); 
+```javascript
+
+var  rater = require('TiRater');
+
+$.index.addEventListener("open", function(e) {
+    rater.initMe(Titanium.App.name,Titanium.App.id);
+});
+
+//Call it whenever you want
+rater.openRateDialogNow();
 
 ```
 
