@@ -151,5 +151,8 @@ Rater.init = function(appName, appId) {
  	Rater.init(appName, appId);
  };
  
+ exports.openRateDialogNow=function (){
+    openRateDialog();
+ };
  
   
